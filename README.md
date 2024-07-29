@@ -10,7 +10,7 @@ Edit the file using a text editor like nano:
 nano download_and_open.sh
 
 Add the following content to the file:
--------------------------------------
+
 #!/bin/bash
 
 # URL of the image
@@ -29,7 +29,7 @@ if [ -f "$DESTINATION" ]; then
 else
     echo "Failed to download the image."
 fi
-----------------------------------------
+
 Replace https://www.example.com/image.jpg with the URL of the image you want to download.
 
 Save and exit the editor. If you’re using nano, press CTRL + X, then Y, and Enter.
