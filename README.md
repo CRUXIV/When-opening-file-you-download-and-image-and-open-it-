@@ -10,19 +10,15 @@ Edit the file using a text editor like nano:
 nano download_and_open.sh
 
 Add the following content to the file:
-
+-----------------------------------
 #!/bin/bash
 
-# URL of the image
 IMAGE_URL="https://www.example.com/image.jpg"
 
-# Destination file name
 DESTINATION="downloaded_image.jpg"
 
-# Download the image
 wget $IMAGE_URL -O $DESTINATION
 
-# Check if the image was downloaded successfully
 if [ -f "$DESTINATION" ]; then
     # Open the image with the default image viewer
     xdg-open $DESTINATION
@@ -31,7 +27,7 @@ else
 fi
 
 Replace https://www.example.com/image.jpg with the URL of the image you want to download.
-
+---------------------------------------------------------------------------------------
 Save and exit the editor. If you’re using nano, press CTRL + X, then Y, and Enter.
 
 Make the script executable:
